@@ -1,5 +1,5 @@
 # 1
-L = list(range(10))
+L = list(range(0, 10))
 x = lambda a: a ** 2
 square_list = list(map(x, L))
 print(square_list)
@@ -10,8 +10,6 @@ square_list = list(map(x, L))
 print(square_list)
 
 # 2
-
-
 def star_function(name):
     for y in range(0, 5):
         print(name*y)
