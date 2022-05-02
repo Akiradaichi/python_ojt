@@ -11,7 +11,7 @@ while z > 0:
 7.square-root
 8.cube""")
 
-    user_input = int(input("Enter choice:"))
+    user_input = str(input("Enter choice:"))
 
     def add_operation(first, second):
         x = first + second
@@ -45,44 +45,44 @@ while z > 0:
         x = number ** 3
         print("Cube =", x)
 
-    if user_input == 1:
-        first = int(input("first number:"))
-        second = int(input("second number:"))
+    if user_input.lower() in "add" or user_input == "1":
+        first = float(input("first number:"))
+        second = float(input("second number:"))
         add_operation(first, second)
-    elif user_input == 2:
-        first = int(input("first number:"))
-        second = int(input("second number:"))
+    elif user_input.lower() in "subtract" or user_input == "2":
+        first = float(input("first number:"))
+        second = float(input("second number:"))
         subtract_operation(first, second)
-    elif user_input == 3:
-        first = int(input("first number:"))
-        second = int(input("second number:"))
+    elif user_input.lower() in "multiply" or user_input == "3":
+        first = float(input("first number:"))
+        second = float(input("second number:"))
         multiply_operation(first, second)
-    elif user_input == 4:
-        first = int(input("first number:"))
-        second = int(input("second number:"))
+    elif user_input.lower() in "divide" or user_input == "4":
+        first = float(input("first number:"))
+        second = float(input("second number:"))
         divide_operation(first, second)
-    elif user_input == 5:
-        first = int(input("first number:"))
-        second = int(input("second number:"))
+    elif user_input.lower() in "power" or user_input == "5":
+        first = float(input("first number:"))
+        second = float(input("second number:"))
         power_operation(first, second)
-    elif user_input == 6:
-        first = int(input("first number:"))
-        second = int(input("second number:"))
+    elif user_input.lower() in "modulo" or user_input == "6":
+        first = float(input("first number:"))
+        second = float(input("second number:"))
         modulo_operation(first, second)
-    elif user_input == 7:
-        number = int(input("enter number :"))
+    elif user_input.lower() in "square root" or user_input == "7":
+        number = float(input("enter number :"))
         squareroot_operation(number)
-    elif user_input == 8:
-        number = int(input("enter number :"))
+    elif user_input.lower() in "cube" or user_input == "8":
+        number = float(input("enter number :"))
         cube_operation(number)
     else:
         print("invalid input")
 
     user_again = str(input("Let's do next calculation? (yes/no)"))
 
-    if user_again == "yes":
+    if user_again.lower() == "yes":
         continue
-    elif user_again == "no":
+    elif user_again.lower() == "no":
         break
     else:
         print("invalid output")
