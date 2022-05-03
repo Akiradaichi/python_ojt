@@ -44,40 +44,78 @@ while z > 0:
     def cube_operation(number):
         x = number ** 3
         print("Cube =", x)
-    try:
-        if user_input.lower() == "add" or user_input == "1":
-            first = float(input("first number:"))
-            second = float(input("second number:"))
-            add_operation(first, second)
-        elif user_input.lower() == "subtract" or user_input == "2":
-            first = float(input("first number:"))
-            second = float(input("second number:"))
-            subtract_operation(first, second)
-        elif user_input.lower() == "multiply" or user_input == "3":
-            first = float(input("first number:"))
-            second = float(input("second number:"))
-            multiply_operation(first, second)
-        elif user_input.lower() == "divide" or user_input == "4":
-            first = float(input("first number:"))
-            second = float(input("second number:"))
-            divide_operation(first, second)
-        elif user_input.lower() == "power" or user_input == "5":
-            first = float(input("first number:"))
-            second = float(input("second number:"))
-            power_operation(first, second)
-        elif user_input.lower() == "modulo" or user_input == "6":
-            first = float(input("first number:"))
-            second = float(input("second number:"))
-            modulo_operation(first, second)
-        elif user_input.lower() == "square root" or user_input == "7":
-            number = float(input("enter number :"))
-            squareroot_operation(number)
-        elif user_input.lower() == "cube" or user_input == "8":
-            number = float(input("enter number :"))
-            cube_operation(number)
-        else:
-            print("invalid input")
-    except ValueError:
+
+    if user_input.lower() == "add" or user_input == "1":
+        while True:
+            try:
+                first = float(input("first number:"))
+                second = float(input("second number:"))
+                add_operation(first, second)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "subtract" or user_input == "2":
+        while True:
+            try:
+                first = float(input("first number:"))
+                second = float(input("second number:"))
+                subtract_operation(first, second)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "multiply" or user_input == "3":
+        while True:
+            try:
+                first = float(input("first number:"))
+                second = float(input("second number:"))
+                multiply_operation(first, second)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "divide" or user_input == "4":
+        while True:
+            try:
+                first = float(input("first number:"))
+                second = float(input("second number:"))
+                divide_operation(first, second)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "power" or user_input == "5":
+        while True:
+            try:
+                first = float(input("first number:"))
+                second = float(input("second number:"))
+                power_operation(first, second)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "modulo" or user_input == "6":
+        while True:
+            try:
+                first = float(input("first number:"))
+                second = float(input("second number:"))
+                modulo_operation(first, second)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "square root" or user_input == "7":
+        while True:
+            try:
+                number = float(input("enter number :"))
+                squareroot_operation(number)
+                break
+            except ValueError:
+                print("Valid number pls")
+    elif user_input.lower() == "cube" or user_input == "8":
+        while True:
+            try:
+                number = float(input("enter number :"))
+                cube_operation(number)
+                break
+            except ValueError:
+                print("Valid number pls")
+    else:
         print("invalid input")
 
     user_again = str(input("Let's do next calculation? (yes/no)"))
