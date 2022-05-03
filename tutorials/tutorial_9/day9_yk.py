@@ -88,3 +88,4 @@ while z > 0:
         break
     else:
         print("invalid output")
+        break
