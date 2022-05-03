@@ -45,34 +45,34 @@ while z > 0:
         x = number ** 3
         print("Cube =", x)
     try:
-        if user_input.lower() in "add" or user_input == "1":
+        if user_input.lower() == "add" or user_input == "1":
             first = float(input("first number:"))
             second = float(input("second number:"))
             add_operation(first, second)
-        elif user_input.lower() in "subtract" or user_input == "2":
+        elif user_input.lower() == "subtract" or user_input == "2":
             first = float(input("first number:"))
             second = float(input("second number:"))
             subtract_operation(first, second)
-        elif user_input.lower() in "multiply" or user_input == "3":
+        elif user_input.lower() == "multiply" or user_input == "3":
             first = float(input("first number:"))
             second = float(input("second number:"))
             multiply_operation(first, second)
-        elif user_input.lower() in "divide" or user_input == "4":
+        elif user_input.lower() == "divide" or user_input == "4":
             first = float(input("first number:"))
             second = float(input("second number:"))
             divide_operation(first, second)
-        elif user_input.lower() in "power" or user_input == "5":
+        elif user_input.lower() == "power" or user_input == "5":
             first = float(input("first number:"))
             second = float(input("second number:"))
             power_operation(first, second)
-        elif user_input.lower() in "modulo" or user_input == "6":
+        elif user_input.lower() == "modulo" or user_input == "6":
             first = float(input("first number:"))
             second = float(input("second number:"))
             modulo_operation(first, second)
-        elif user_input.lower() in "square root" or user_input == "7":
+        elif user_input.lower() == "square root" or user_input == "7":
             number = float(input("enter number :"))
             squareroot_operation(number)
-        elif user_input.lower() in "cube" or user_input == "8":
+        elif user_input.lower() == "cube" or user_input == "8":
             number = float(input("enter number :"))
             cube_operation(number)
         else:
