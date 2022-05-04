@@ -1,15 +1,16 @@
 import math
-z = 1
-while z > 0:
+
+
+def calculaton():
     print("""Select operation.
-1.Add
-2.Subtract
-3.Multiply
-4.Divide
-5.power
-6.modulo
-7.square-root
-8.cube""")
+    1.Add
+    2.Subtract
+    3.Multiply
+    4.Divide
+    5.power
+    6.modulo
+    7.square-root
+    8.cube""")
     user_input = str(input("Enter choice:"))
     print(" ")
 
@@ -188,13 +189,22 @@ while z > 0:
                 print("Number has to be a number !!")
                 print(" ")
     else:
-        print("invalid input")
-    print(" ")
-    user_again = str(input("Let's do next calculation? (yes/no)"))
+        print("Pls enter the opreation number or name!!")
+        print(" ")
+        calculaton()
 
+
+def again():
+    user_again = str(input("Let's do next calculation? (yes/no)"))
+    print(" ")
     if user_again.lower() == "yes":
-        continue
+        calculaton()
     elif user_again.lower() == "no":
-        break
+        print("bye")
     else:
-        print("invalid output")
+        print("Pls enter yes or no only ")
+        again()
+
+
+calculaton()
+again()
