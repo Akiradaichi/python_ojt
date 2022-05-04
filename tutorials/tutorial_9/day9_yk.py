@@ -48,11 +48,11 @@ while z > 0:
     if user_input.lower() == "add" or user_input == "1":
         while True:
             try:
-                first = float(input("first number:"))
+                first = float(input("Enter first number:"))
                 print(" ")
                 while True:
                     try:
-                        second = float(input("second number:"))
+                        second = float(input("Enter second number:"))
                         print(" ")
                         break
                     except ValueError:
@@ -68,11 +68,11 @@ while z > 0:
     elif user_input.lower() == "subtract" or user_input == "2":
         while True:
             try:
-                first = float(input("first number:"))
+                first = float(input("Enter first number:"))
                 print(" ")
                 while True:
                     try:
-                        second = float(input("second number:"))
+                        second = float(input("Enter second number:"))
                         print(" ")
                         break
                     except ValueError:
@@ -88,11 +88,11 @@ while z > 0:
     elif user_input.lower() == "multiply" or user_input == "3":
         while True:
             try:
-                first = float(input("first number:"))
+                first = float(input("Enter first number:"))
                 print(" ")
                 while True:
                     try:
-                        second = float(input("second number:"))
+                        second = float(input("Enter second number:"))
                         print(" ")
                         break
                     except ValueError:
@@ -108,11 +108,11 @@ while z > 0:
     elif user_input.lower() == "divide" or user_input == "4":
         while True:
             try:
-                first = float(input("first number:"))
+                first = float(input("Enter first number:"))
                 print(" ")
                 while True:
                     try:
-                        second = float(input("second number:"))
+                        second = float(input("Enter second number:"))
                         print(" ")
                         break
                     except ValueError:
@@ -128,11 +128,11 @@ while z > 0:
     elif user_input.lower() == "power" or user_input == "5":
         while True:
             try:
-                first = float(input("first number:"))
+                first = float(input("Enter first number:"))
                 print(" ")
                 while True:
                     try:
-                        second = float(input("second number:"))
+                        second = float(input("Enter second number:"))
                         print(" ")
                         break
                     except ValueError:
@@ -148,11 +148,11 @@ while z > 0:
     elif user_input.lower() == "modulo" or user_input == "6":
         while True:
             try:
-                first = float(input("first number:"))
+                first = float(input("Enter first number:"))
                 print(" ")
                 while True:
                     try:
-                        second = float(input("second number:"))
+                        second = float(input("Enter second number:"))
                         print(" ")
                         break
                     except ValueError:
@@ -168,7 +168,7 @@ while z > 0:
     elif user_input.lower() == "square root" or user_input == "7":
         while True:
             try:
-                number = float(input("enter number :"))
+                number = float(input("Enter number :"))
                 print(" ")
                 squareroot_operation(number)
                 break
@@ -179,7 +179,7 @@ while z > 0:
     elif user_input.lower() == "cube" or user_input == "8":
         while True:
             try:
-                number = float(input("enter number :"))
+                number = float(input("Enter number :"))
                 print(" ")
                 cube_operation(number)
                 break
@@ -198,4 +198,3 @@ while z > 0:
         break
     else:
         print("invalid output")
-        break
