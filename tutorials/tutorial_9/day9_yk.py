@@ -66,6 +66,7 @@ def calculaton():
                 print(" ")
                 print("First number has to be a number !!")
                 print(" ")
+        again()
     elif user_input.lower() == "subtract" or user_input == "2":
         while True:
             try:
@@ -86,6 +87,7 @@ def calculaton():
                 print(" ")
                 print("First number has to be a number !!")
                 print(" ")
+        again()
     elif user_input.lower() == "multiply" or user_input == "3":
         while True:
             try:
@@ -106,6 +108,7 @@ def calculaton():
                 print(" ")
                 print("First number has to be a number !!")
                 print(" ")
+        again()
     elif user_input.lower() == "divide" or user_input == "4":
         while True:
             try:
@@ -126,6 +129,7 @@ def calculaton():
                 print(" ")
                 print("First number has to be a number !!")
                 print(" ")
+        again()
     elif user_input.lower() == "power" or user_input == "5":
         while True:
             try:
@@ -146,6 +150,7 @@ def calculaton():
                 print(" ")
                 print("First number has to be a number !!")
                 print(" ")
+        again()
     elif user_input.lower() == "modulo" or user_input == "6":
         while True:
             try:
@@ -166,6 +171,8 @@ def calculaton():
                 print(" ")
                 print("First number has to be a number !!")
                 print(" ")
+
+        again()
     elif user_input.lower() == "square root" or user_input == "7":
         while True:
             try:
@@ -177,6 +184,7 @@ def calculaton():
                 print(" ")
                 print("Number has to be a number !!")
                 print(" ")
+        again()
     elif user_input.lower() == "cube" or user_input == "8":
         while True:
             try:
@@ -188,6 +196,7 @@ def calculaton():
                 print(" ")
                 print("Number has to be a number !!")
                 print(" ")
+        again()
     else:
         print("Pls enter the opreation number or name!!")
         print(" ")
@@ -207,4 +216,3 @@ def again():
 
 
 calculaton()
-again()
