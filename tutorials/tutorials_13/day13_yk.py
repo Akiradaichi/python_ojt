@@ -7,9 +7,11 @@ def game():
     while True:
         try:
             guess_number = int(input("Enter number: "))
+            if guess_number < 0:
+                raise ValueError
             break
         except ValueError:
-            print("the number has to be integer")
+            print("the number has to be positive and integer")
     count = int(2)
     while count > 0:
         if num == guess_number:
@@ -20,9 +22,11 @@ def game():
             while True:
                 try:
                     guess_number = int(input("Enter number: "))
+                    if guess_number < 0:
+                        raise ValueError
                     break
                 except ValueError:
-                    print("the number has to be integer")
+                    print("the number has to be positive and integer")
         count -= 1
     if count == 0 and num != guess_number:
         print("You lost. You have no time left to guess number.")
