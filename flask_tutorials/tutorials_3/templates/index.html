@@ -1,0 +1,19 @@
+<html>
+  <head>
+      <script type = "text/javascript"
+        src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+  </head>
+ 
+  <body>
+    <form action = "http://127.0.0.1:5000/login" method = "post">
+      <p>Username</p>
+      <input type = "text" name="name" />
+      <p>email</p>
+      <input type = "text" name="email" />
+      <p>password</p>
+      <input type = "password" name="pw" />
+      <p>password check</p>
+      <input placeholder="re enter" type = "password" name="pw" /></form>
+      <p><input type = "submit" value = "submit" /></p>
+  </body>
+</html>
